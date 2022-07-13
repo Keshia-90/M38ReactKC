@@ -1,3 +1,21 @@
 .App {
   text-align: center;
 }
+
+img {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-self: center, space ;
+}
+
+.randPics {
+  display: flex;
+  flex-direction: row;
+  align-content: center, space-between;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-size: 30px;
+}
