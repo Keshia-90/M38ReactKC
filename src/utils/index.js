@@ -18,6 +18,23 @@ export const signUp = async (username, email, password, setter) => {
     }
 };
 
+export const deleteAcc = async (username, password, setter) => {
+    try {
+        const response = await fetch ("http://localhost:5001/user/:username", {
+            method: "DELETE",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                username,
+                password,
+            }),
+        });
+        const data = await response.json();
+        setter(data.user.username);
+    } catch (error) {
+    console.log(error);
+    }
+};
+
 export const logIn = async (username, password, setter) => {
     try {
         const response = await fetch ("http://localhost:5001/login", {

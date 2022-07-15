@@ -40,14 +40,17 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="Account">
       <p>Create An Account</p>
       <SignUp setter={setUser} /> 
       <p>OR</p>
       <p>Login</p>
       <LogIn setter={setUser} /> 
+      </div>
       <h1>{user}</h1>
       {user && photos.map((item, i) => {
           return <Image key={i} author={item.author} url={item.download_url} />;
+          
         })}
     </div>
   );
