@@ -1,3 +1,9 @@
+# This project was made as part of the M38 Coding Bootcamp, the log in and sign up function work, not exactly aesthetically pleasing. I had attempted to get an update form and delete account sorted but couldn't get my head around it.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
