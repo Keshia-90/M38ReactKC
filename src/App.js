@@ -3,6 +3,7 @@ import Image from "./components/image";
 import "./App.css";
 import SignUp from "./components/signOrLog";
 import LogIn from "./components/logIn";
+import DeleteAcc from "./components/deleteAcc";
 
 const App = () => {
   const [user, setUser] = useState();
@@ -48,6 +49,7 @@ const App = () => {
       <LogIn setter={setUser} /> 
       </div>
       <h1>{user}</h1>
+      <DeleteAcc setter={setUser}/>
       {user && photos.map((item, i) => {
           return <Image key={i} author={item.author} url={item.download_url} />;
           
